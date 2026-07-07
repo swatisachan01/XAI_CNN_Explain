@@ -1,0 +1,11 @@
+torch>=2.1
+torchvision>=0.16
+numpy>=1.24
+matplotlib>=3.7
+scikit-image>=0.21
+scikit-learn>=1.3
+Pillow>=10.0
+# Optional (enable specific explainers):
+# shap>=0.44      # for the SHAP explainer
+# lime>=0.2       # optional; a built-in LIME fallback is included
+# pytest>=7.4     # for the test suite
