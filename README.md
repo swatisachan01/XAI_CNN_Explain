@@ -1,7 +1,7 @@
 # XAI_CNN_Explain
 
 
-A research-grade, PyTorch toolkit for **explaining convolutional neural network (CNN) image classifiers**. It trains (or loads) a CNN on public datasets and attributes its predictions back to the input using a broad set of gradient-based, CAM-based, perturbation-based and reference-based methods — then **evaluates those explanations quantitatively** with faithfulness metrics, so methods can be compared on evidence rather than by eye.
+A research-grade, PyTorch toolkit for **explaining convolutional neural network (CNN) image classifiers**. It trains (or loads) a CNN on public datasets and attributes its predictions back to the input using a broad set of gradient-based, CAM-based, perturbation-based and reference-based methods, then **evaluates those explanations quantitatively** with faithfulness metrics, so methods can be compared on evidence rather than by eye.
 
 The repository is designed to be a clean starting point for interpretability experiments: every method implements the same narrow interface, so adding a new attribution method or a new evaluation metric is a small, local change.
 
@@ -22,7 +22,7 @@ The repository is designed to be a clean starting point for interpretability exp
 
 ## Why this exists
 
-Saliency maps are easy to produce and easy to over-trust. Two maps can look equally plausible while one is faithful to the model and the other is essentially edge detection. This toolkit therefore pairs **thirteen attribution methods** with **causal faithfulness metrics** (deletion / insertion) and a localisation metric (pointing game), so that "which explanation should I believe?" becomes a measurable question. It targets both a small from-scratch CNN (whose weights you control) and standard ImageNet-pretrained backbones (for real-world images).
+Saliency maps are easy to produce and easy to overtrust. Two maps can look equally plausible, even though one is faithful to the model and the other is essentially edge detection. This toolkit therefore pairs **thirteen attribution methods** with **causal faithfulness metrics** (deletion/insertion) and a localization metric (pointing game), so that "which explanation should I believe?" becomes a measurable question. It targets both a small from-scratch CNN (whose weights you control) and standard ImageNet-pretrained backbones (for real-world images).
 
 ## What's included
 
